@@ -14,10 +14,11 @@ void win( void ) {
 }
 
 void vuln() {
-char input[0x90];
+char input[24];
     
     puts("Write something");
-    fgets(input, 0x400, stdin);
+    fgets(input, 100, stdin);
+
     puts("hello from main after fgets");
     return;
 }
